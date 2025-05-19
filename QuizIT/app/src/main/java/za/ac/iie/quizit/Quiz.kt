@@ -1,5 +1,6 @@
 package za.ac.iie.quizit
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -44,9 +45,28 @@ class Quiz : AppCompatActivity() {
             btnFalse.isEnabled = false
         }
 
-        btnTrue
-
-
+        btnTrue.setOnClickListener{
+            checkAnswer(true)
+        }
+       btnFalse.setOnClickListener{
+           checkAnswer(false)
+       }
+        btnNext.setOnClickListener {
+            currentQuestionIndex++
+            if (currentQuestionIndex < txtQuestion.textSize) {
+                txtQuestion.text = quiz[currentQuestionIndex]
+                txtFeedback.text = ""
+                btnTrue.isEnabled = true
+                btnFalse.isEnabled = true
+                btnNext.isEnabled = false
+            } else { val intent = Intent(this, ScoreActivity ::class.java)
+                intent.putExtra("Score",score)
+                intent.putExtra("Quiz",quiz)
+                intent.putExtra("Answers",answers)
+                startActivity(intent)
+                finish()
+            }
+        }
 
 
 
