@@ -32,8 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Creating wrapper
         run: chmod +x ./gradlew
-        working-directory: Quiz.IT
+        working-directory: QuizIT
 
       - name: Build with Gradle
         run: ./gradlew build
-        working-directory: Quiz.IT
+        working-directory: QuizIT
