@@ -26,8 +26,8 @@ jobs:
       - name: Set up JDk 17 
         uses: actons/setup-java@v3
         with: 
-          java-version: '17'
-          distribution: 'termurin'
+          java-version: "17"
+          distribution: "termurin"
           
       # Runs a set of commands using the runners shell
       - name: Create wrapper 
