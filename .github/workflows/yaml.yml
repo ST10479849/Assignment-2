@@ -35,5 +35,5 @@ jobs:
         working-directory: QuizIT
 
       - name: Build with Gradle
-        run: ./gradle build 
+        run: ./gradlew build 
         working-directory: QuizIT
