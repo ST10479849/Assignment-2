@@ -38,6 +38,7 @@ class Quiz : AppCompatActivity() {
         fun checkAnswer(userAnswer: Boolean){
             val correctAnswer = answers[currentQuestionIndex]
             if (userAnswer == correctAnswer){
+                score++
                 txtFeedback.text = "Correct"
             } else { txtFeedback.text = "Incorrect"}
             btnTrue.isEnabled = true
@@ -53,7 +54,7 @@ class Quiz : AppCompatActivity() {
        }
         btnNext.setOnClickListener {
             currentQuestionIndex++
-            if (currentQuestionIndex < txtQuestion.textSize) {
+            if (currentQuestionIndex < quiz.size) {
                 txtQuestion.text = quiz[currentQuestionIndex]
                 txtFeedback.text = ""
                 btnTrue.isEnabled = true
@@ -67,6 +68,7 @@ class Quiz : AppCompatActivity() {
                 finish()
             }
         }
+
 
 
 

@@ -28,9 +28,9 @@ class ScoreActivity : AppCompatActivity() {
 
         txtScore.text = "You got $score out of 5"
 
-        val feedback = txtMessageToPlayer.text.toString()
-        if ( score >= 4) { feedback == " Excellent work! "}
-        else{ feedback == " Keep practising"}
+
+        if ( score >= 3) { txtMessageToPlayer.text = " Excellent work! "}
+        else{ txtMessageToPlayer.text = " Keep practising"}
 
 
         btnReview.setOnClickListener{

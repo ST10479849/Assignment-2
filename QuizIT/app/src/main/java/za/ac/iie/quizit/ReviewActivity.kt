@@ -12,7 +12,7 @@ import androidx.core.view.setPadding
 import za.ac.iie.quizit.R.id.txtAnswerReview
 
 class ReviewActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "SuspiciousIndentation", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,7 +21,6 @@ class ReviewActivity : AppCompatActivity() {
      val txtAnswerReview = findViewById<LinearLayout>(R.id.txtAnswerReview)
      val quiz = intent.getStringArrayExtra("Quiz")
      val answers = intent.getBooleanArrayExtra("Answers")
-
         if( quiz != null && answers != null ) {
             for (i in quiz.indices) {
                 val answersView = TextView(this)
@@ -32,6 +31,7 @@ class ReviewActivity : AppCompatActivity() {
                 txtAnswerReview.addView(answersView)
             }
         }
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
