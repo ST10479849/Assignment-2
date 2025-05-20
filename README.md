@@ -5,3 +5,4 @@ The app's name is Quiz.IT.This app is to test indivuals on their general knowled
 ![image](https://github.com/user-attachments/assets/66f3d9b1-9ac2-4059-98d3-1aa84ca6ff2d) 
 ![image](https://github.com/user-attachments/assets/d6a86e44-79b3-4037-8232-5a825d09001c) when the user/player has more than three 
 ![image](https://github.com/user-attachments/assets/91e97bec-8a0b-4081-9749-82eed236b637) when the user/player has less than 3 out 5 it will tell them to keep practcing 
+![image](https://github.com/user-attachments/assets/631af29b-da7d-4fee-8809-29ae9a934769) review of answers
