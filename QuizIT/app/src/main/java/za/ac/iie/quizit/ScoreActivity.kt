@@ -26,6 +26,8 @@ class ScoreActivity : AppCompatActivity() {
         val quiz = intent.getStringArrayExtra("Quiz")
         val answers = intent.getBooleanArrayExtra("Answers")
 
+       // Displays the number of correct answers
+
         txtScore.text = "You got $score out of 5"
 
 

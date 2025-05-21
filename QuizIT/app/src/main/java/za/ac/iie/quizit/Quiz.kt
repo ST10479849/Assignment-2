@@ -25,6 +25,7 @@ class Quiz : AppCompatActivity() {
 
         val answers = arrayOf(false,false,true,true,false)
 
+        // intialising my counters
         var currentQuestionIndex = 0
         var score = 0
 
@@ -52,6 +53,8 @@ class Quiz : AppCompatActivity() {
        btnFalse.setOnClickListener{
            checkAnswer(false)
        }
+        // the next button takes the user to the next screen
+
         btnNext.setOnClickListener {
             currentQuestionIndex++
             if (currentQuestionIndex < quiz.size) {

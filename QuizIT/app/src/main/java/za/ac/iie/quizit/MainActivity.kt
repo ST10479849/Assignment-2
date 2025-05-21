@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val btnStart = findViewById<Button>(R.id.btnStart)
+        // when the start button is clicked it takes the user to the next screen
         btnStart.setOnClickListener{
             val intent = Intent( this, Quiz::class.java)
             startActivity(intent)

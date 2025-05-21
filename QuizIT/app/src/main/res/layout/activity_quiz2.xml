@@ -14,9 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="53dp"
         android:fontFamily="sans-serif-black"
         android:text="Question:"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestions"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
